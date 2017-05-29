@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GmailServlet</servlet-name>
+		<servlet-class>pw2.GmailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GmailServlet</servlet-name>
+		<url-pattern>/gmail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddCorreoServlet</servlet-name>
+		<servlet-class>pw2.AddCorreoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddCorreoServlet</servlet-name>
+		<url-pattern>/addCorreo</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ChoseOptionServlet</servlet-name>
+		<servlet-class>pw2.ChoseOptionServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ChoseOptionServlet</servlet-name>
+		<url-pattern>/choseOption</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PROYECTOWEB2Servlet</servlet-name>
+		<servlet-class>pw2.PROYECTOWEB2Servlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PROYECTOWEB2Servlet</servlet-name>
+		<url-pattern>/editarOption</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ModificarCorreoServlet</servlet-name>
+		<servlet-class>pw2.ModificarCorreoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ModificarCorreoServlet</servlet-name>
+		<url-pattern>/modificarCorreo</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>Pagina.html</welcome-file>
+	</welcome-file-list>
+</web-app>
